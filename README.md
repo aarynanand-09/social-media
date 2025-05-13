@@ -11,8 +11,9 @@ We have only used MongoDB, React and Node.
 
 After that you have to initialize the database by this command in the server folder:
 node init.js admin@phreddit.com AdminUser Unknown009
-It is very important for our database to keep the username AdminUser because we would like to reserve that for the admin. So for initialization
-it is extremely to initialize with this exact command, the password and email can still be changed but it is very important to keep that username.
+It is very important for our database to keep the username AdminUser because we would like to reserve that for the admin. 
+
+So for initialization it is extremely to initialize with this exact command, the password and email can still be changed but it is very important to keep that username. DO NOT CHANGE THE USERNAME FOR INITIALIZATION.
 
 Then you need to run nodemon server.js in server folder and on a separate command line run npm start in the client folder.
 And that is it your app will start at port 3000 on localhost.
