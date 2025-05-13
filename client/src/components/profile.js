@@ -22,7 +22,7 @@ export default function UserProfile({
     const [showDetailView, setShowDetailView] = useState(false);
 
     
-    const isAdmin = (isViewMode ? adminUser?.displayName === 'AdminUser' : currentUser?.displayName === 'AdminUser');
+    const isAdmin = (isViewMode ? adminUser?.isAdmin : currentUser?.isAdmin);
     
     
     useEffect(() => {

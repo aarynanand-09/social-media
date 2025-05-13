@@ -28,7 +28,8 @@ async function createUser(userObj) {
         firstName: userObj.firstName,
         lastName: userObj.lastName,
         passwordHash: passwordHash,
-        reputation: userObj.reputation || 100
+        reputation: userObj.reputation || 100,
+        isAdmin: userObj.isAdmin || false
     });
     return await user.save();
 }
@@ -90,7 +91,8 @@ async function initializeDB() {
             firstName: 'Admin',
             lastName: 'User',
             password: adminPassword,
-            reputation: 1000
+            reputation: 1000,
+            isAdmin: true
         });
 
         const users = [];

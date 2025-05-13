@@ -28,6 +28,10 @@ const userSchema = new Schema({
         type: Number,
         default: 100
     },
+    isAdmin: {
+        type: Boolean,
+        default: false
+    },
     joinedCommunities: [{
         type: Schema.Types.ObjectId,
         ref: 'Community'

@@ -1,3 +1,5 @@
+import '@testing-library/jest-dom';
+
 describe('Create Post button test', () => {
   
   test('should be disabled for guest users', () => {
