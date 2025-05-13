@@ -10,9 +10,9 @@ This is because you need to install both client-side and server-side dependencie
 We have only used MongoDB, React and Node.
 
 After that you have to initialize the database by this command in the server folder:
-node init.js admin@phreddit.com IAmAdmin Unknown009
-You can replace the email Id username and password accordingly, but this is what we have used.
-The order is email DisplayName and Password
+node init.js admin@phreddit.com AdminUser Unknown009
+It is very important for our database to keep the username AdminUser because we would like to reserve that for the admin. So for initialization
+it is extremely to initialize with this exact command, the password and email can still be changed but it is very important to keep that username.
 
 Then you need to run nodemon server.js in server folder and on a separate command line run npm start in the client folder.
 And that is it your app will start at port 3000 on localhost.
