@@ -1,15 +1,50 @@
-To run this project you need to clone out repository and install the project dependencies first which you can do by the following:
+🛠️ Project Setup & Installation Guide
+To run this project locally, follow the steps below to set up both the client-side and server-side environments.
+
+📦 Step 1: Clone the Repository
+First, clone the repository to your local machine:
+git clone git@github.com:your-username/your-repo-name.git
+cd your-repo-name
+
+📁 Step 2: Install Dependencies
+Install the required dependencies for both the server and client:
+
+Server Dependencies:
 cd server
 npm install
-and
+
+Client Dependencies:
+Open a new terminal tab or window:
 cd client
 npm install
-This is because you need to install both client-side and server-side dependencies.
-We have only used MongoDB, React and Node.
+This is necessary because the project uses a Node.js backend and a React frontend, each with their own set of dependencies.
 
-After that you have to initialize the database by this command in the server folder:
-node init.js admin@phreddit.com AdminUser Unknown009
-You can keep any email id username and password in that respective order: email username password.
+🧩 Step 3: Initialize the Database
+Within the server directory, initialize the MongoDB database using the following command:
+node init.js your_email@example.com YourUsername YourPassword
+Replace:
 
-Then you need to run nodemon server.js in server folder and on a separate command line run npm start in the client folder.
-And that is it your app will start at port 3000 on localhost.
+your_email@example.com with any email ID
+
+YourUsername with a desired username
+
+YourPassword with a chosen password
+
+🚀 Step 4: Run the Application
+Start the backend server using nodemon:
+cd server
+nodemon server.js
+
+In a separate terminal, start the frontend React app:
+cd client
+npm start
+
+🌐 Application Access
+Once both the server and client are running, you can access the application at:
+http://localhost:3000
+🧰 Technologies Used
+React (Frontend)
+
+Node.js (Backend)
+
+MongoDB (Database)
