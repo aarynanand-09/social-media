@@ -2,9 +2,7 @@
 To run this project locally, follow the steps below to set up both the client-side and server-side environments.
 
 📦 Step 1: Clone the Repository
-First, clone the repository to your local machine:
-git clone git@github.com:your-username/your-repo-name.git
-cd your-repo-name
+First, clone the repository to your local machine and cd repo
 
 📁 Step 2: Install Dependencies
 Install the required dependencies for both the server and client:
